@@ -1,0 +1,16 @@
+.headingSmall, .headingMedium, .headingLarge {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+.headingLarge {
+  font-size: var(--font-size-heading-large);
+}
+
+.headingMedium {
+  font-size: var(--font-size-heading-medium);
+}
+
+.headingSmall {
+  font-size: var(--font-size-heading-small);
+}

@@ -1,0 +1,21 @@
+.buttonPrimary {
+  font-family: var(--font-family-body);
+  cursor: pointer;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-small);
+  color: var(--color-primary-dark);
+  line-height: var(--spacing-large);
+  padding: var(--spacing-none) var(--spacing-large);
+  background-color: var(--button-background-primary);
+  border: var(--border-transparent);
+  border-radius: var(--border-radius-large);
+  margin: var(--spacing-medium) 0;
+  box-shadow: var(--box-shadow-light);
+}
+
+.buttonPrimary:hover {
+  background-color: var(--color-secondary-light);
+  border: var(--border-salmon);
+  border-radius: var(--border-radius-large) var(--border-radius-large) var(--border-radius-large) 0;
+}
+

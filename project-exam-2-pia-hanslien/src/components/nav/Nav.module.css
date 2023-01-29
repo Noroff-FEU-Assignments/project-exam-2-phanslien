@@ -1,0 +1,17 @@
+
+.nav {
+  background: var(--color-secondary-light);
+  padding: var(--spacing-small);
+
+}
+
+.nav ul{
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: var(--spacing-large);
+  line-height: var(--spacing-x-large);
+}
+

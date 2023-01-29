@@ -1,0 +1,28 @@
+.contentOne {
+  margin: var(--spacing-x-large) 0;
+  text-align: center;
+}
+
+.contentTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contentImage1, .contentImage2 {
+  max-width: 100%;
+}
+
+.textbox {
+  background: var(--color-secondary-green);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-lighter);
+}
+
+.textbox p {
+  color: var(--color-primary-lighter);
+}
+
+
