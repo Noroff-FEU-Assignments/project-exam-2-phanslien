@@ -1,16 +1,26 @@
-.headingSmall, .headingMedium, .headingLarge {
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-medium);
-}
-
-.headingLarge {
+.heading_large {
   font-size: var(--font-size-heading-large);
 }
 
-.headingMedium {
+.heading_medium {
   font-size: var(--font-size-heading-medium);
 }
 
-.headingSmall {
+.heading_small {
   font-size: var(--font-size-heading-small);
+}
+
+
+@media only screen and (max-width: 700px) {
+  .heading_large {
+    font-size: var(--font-size-heading-medium);
+  }
+  
+  .heading_medium {
+    font-size: var(--font-size-heading-small);
+  }
+  
+  .heading_small {
+    font-size: var(--font-size-body);
+  }
 }

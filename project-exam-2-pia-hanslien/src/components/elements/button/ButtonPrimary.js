@@ -3,7 +3,7 @@ import styles from './ButtonPrimary.module.css';
 function ButtonPrimary({ buttonPrimary }) {
   return (
     <>
-    <button className={styles.buttonPrimary}>{buttonPrimary}</button>
+    <button className={styles.button_primary}>{buttonPrimary}</button>
 
     </>
   );

@@ -1,107 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&family=Poppins:wght@400;600;800&display=swap');
+@import url("https://use.typekit.net/ptw8ime.css");
 
 :root {
-  --color-primary-dark: #101314;
-  --color-primary-salmon: #D98B8B;
-  --color-primary-lighter: #F0F0F0;
-  --color-secondary-green: #255459;
-  --color-secondary-light: #E7E0E0;
-  --color-secondary-grey-100: #6d6d6daa;
-  --color-secondary-grey-200: #313131aa;
-
+  --color-primary-dark: #222222;
+  --color-primary-light: #F0F0F0;
+  --color-primary-blue: #13547a;
+  --color-secondary-salmon: #80d0c7;
+  --color-secondary-beige: #dce5e8;
+  --color-secondary-grey-200: #31313158;
   --color-transparent: transparent;
 
+  --color-lol: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  --font-family-logo: 'cinema-script', sans-serif;
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-body: 'Open Sans', sans-serif;
-  --font-weight-bold: 800;
-  --font-weight-medium: 600;
-  --font-weight-small: 500;
 
-  --font-size-heading-large: 3rem;
-  --font-size-heading-medium: 2.125rem;
-  --font-size-heading-small: 1.4rem;
-  --font-size-body: 1rem;
-  --font-size-link: 0.875rem;
+  --font-weight-small: 500;
+  --font-weight-medium: 600;
+  --font-weight-large: 800;
+
+  --font-size-logo: 65px;
+  --font-size-heading-large: 32px;
+  --font-size-heading-medium: 24px;
+  --font-size-heading-small: 18px;
+  --font-size-body: 16px;
+  --font-size-link: 14px;
 
   --spacing-none: 0px;
   --spacing-x-small: 4px;
   --spacing-small: 8px;
-  --spacing-regular: 16px;
-  --spacing-medium: 2.2rem;
-  --spacing-large: 3rem;
+  --spacing-regular: 24px;
+  --spacing-medium: 30px;
+  --spacing-large: 40px;
   --spacing-x-large: 64px;
 
   --text-decoration-none: none;
   --text-decoration-underline: underline;
 
-  --box-shadow-light: 0px 2px 8px 0px var(  --color-secondary-grey-100);
-  --box-shadow-dark: 0px 2px 8px 0px var(  --color-secondary-grey-200);
-
+  --box-shadow: 0px 2px 8px 0px var(--color-secondary-grey-200);
 
   --border-none: none;
-  --border-transparent: 1px solid transparent;
+  --border-transparent: 1px solid var(--color-transparent);
   --border-dark: 1px solid var(--color-primary-dark);
-  --border-green: 1px solid var(--color-secondary-green);
-  --border-salmon: 1px solid var(--color-primary-salmon);
-  --border-light: 1px solid var(--color-secondary-light);
+  --border-blue: 1px solid var(--color-primary-blue);
+  --border-salmon: 1px solid var(--color-lol);
+  --border-beige: 1px solid var(--color-secondary-beige);
 
-  --border-radius-small: 5px;
   --border-radius-large: 50px;
-
-  --background-primary: var(--color-primary-lighter);
-
-  --button-background-primary: var(--color-primary-salmon);
-  --button-background-secondary: var(--color-secondary-light);
-  --button-color-primary: var(--color-primary-dark);
 }
 
-*, html {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
 body {
-  background: var(--background-primary);
+  background-color: var(--color-secondary-beige);
 }
 
-
-/* Text, Labels & Link styles */
-p, a, .Link {
+/* Global Text & Link styles */
+p, a {
   font-family: var(--font-family-body);
   font-size: var(--font-size-body);
-  color: var(--color-primary-dark);
+  line-height: var(--spacing-regular);
 }
 
-a, .Link {
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+a {
   cursor: pointer;
   text-decoration: var(--text-decoration-none);
+  font-weight: var(--font-weight-large);
 }
 
-.Link {
-  text-decoration: var(--text-decoration-none);
-  font-weight: var(--font-weight-bold);
-}
 
-.Link:hover {
-  text-decoration: var(--text-decoration-underline);
-  font-weight: var(--font-weight-bold);
-}
-
-label {
-  font-weight: var(--font-weight-small);
-  background-color: var(--color-primary-salmon);
-  padding: var(--spacing-small) var(--spacing-large);
-  font-size: var(--font-size-body);
-  font-family: var(--font-family-body);
-  color: var(--color-primary-dark);
-  margin: var(--spacing-small);
-}
-
-/* Button styles */
-
-/*form styles */
-input {
-  border-radius: var(--border-radius-small);
-  border: var(--border-green);
-  line-height: var(--spacing-medium);
-  padding: var(--spacing-x-small);
-  font-size: var(--font-size-body);
+@media only screen and (max-width: 700px) {
+  p, a {
+    font-size: var(--font-size-link);
+  }
 }

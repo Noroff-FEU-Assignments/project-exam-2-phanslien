@@ -1,0 +1,74 @@
+.container__accommodations {
+  margin: 30px;
+}
+
+.acc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container__accommodations_card {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 30px;
+  min-height: 500px;
+  box-shadow: var(--box-shadow);
+  background: var(--color-primary-light);
+}
+.accommodations__card_body {
+  max-width: 400px;
+}
+.accommodations__card_price {
+  margin-bottom: 10px;
+  font-size: var(--font-size-link);
+  font-weight: var(--font-w);
+}
+
+.accommodations__card_title {
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  font-size: var(--font-size-heading-small);
+}
+
+.accommodations__card_links {
+  float: right;
+  margin-top: 12px;
+  text-decoration: var(--text-decoration-none);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-dark);
+  font-size: var(--font-size-link);
+ 
+}
+
+.accommodations__card_links:hover {
+  text-decoration: var(--text-decoration-underline);
+  font-weight: var(--font-weight-large);
+}
+
+.accommodations__card_image {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.triangle {
+  border: solid var(--color-primary-dark);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 5px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .acc {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container_home h1 {
+    font-size: var(--font-size-heading-small);
+    margin-bottom: 10px;
+  }
+}

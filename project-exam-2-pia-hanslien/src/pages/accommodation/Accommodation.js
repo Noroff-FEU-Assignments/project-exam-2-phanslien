@@ -1,7 +1,18 @@
+import Heading from "../../components/elements/heading/HeadingLarge";
+import FetchHotels from "../../hooks/FetchHotels";
+import Search from "../../components/search/Search";
+import styles from "./Accommodation.module.css";
 
 function Accommodation() {
+  <FetchHotels />;
+
   return (
-    <h1>Hotels</h1>
+    <>
+    <div className={styles.container_accommodation_heading}>
+      <Heading headingLarge="Accommodations"/>
+      </div>
+      <Search />
+      </>
   );
 }
 
