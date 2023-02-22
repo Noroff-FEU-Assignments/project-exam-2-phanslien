@@ -2,7 +2,6 @@ import FetchData from "../../../hooks/FetchHotels";
 import styles from "./TabContentOne.module.css";
 import { ContactFormURL } from "../../../constants/API";
 
-
 function TabContentOne() {
   const [loading, error, data] = FetchData(ContactFormURL);
 
@@ -13,8 +12,9 @@ function TabContentOne() {
     <div>
       {data.map((hotel) => (
         <div className={styles.container_tabOne}>
-          <p className={styles.container_tabOne__datePublished}>{hotel.attributes.createdAt}</p>
-
+          <p className={styles.container_tabOne__datePublished}>
+            {hotel.attributes.createdAt}
+          </p>
           <p>
             <span className={styles.container_tabOne__span}>First name:</span>{" "}
             {hotel.attributes.FirstName}

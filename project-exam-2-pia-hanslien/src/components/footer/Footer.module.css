@@ -1,5 +1,5 @@
 .footer {
-  background: var(--color-primary-blue);
+  background: var(--color-primary-red);
   padding: var(--spacing-large);
   display: grid;
   grid-template-columns: 1fr 1fr;

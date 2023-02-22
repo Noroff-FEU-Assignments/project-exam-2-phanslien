@@ -29,8 +29,8 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.7s;
-  background: var(--color-primary-blue);
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background: var(--color-primary-red);
+  background: var(--color-primary-red);
   box-shadow: var(--box-shadow);
 }   
  
@@ -40,7 +40,7 @@ ul.dashboard_tabs__navigation li:hover {
 }
  
 ul.dashboard_tabs__navigation li.active {
-  background: var(--color-primary-blue);
+  background: var(--color-primary-red);
   color: var(--color-primary-light);
 }
 
@@ -48,7 +48,7 @@ ul.dashboard_tabs__navigation li.active {
   margin: 10px;
   font-size: 2rem;
   padding: 20px;
-  background: var(--color-primary-blue);
+  background: var(--color-primary-red);
   min-height: 800px;
 }
 

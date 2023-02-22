@@ -3,8 +3,11 @@
   grid-template-columns: 1fr;
   margin: 40px 20px 90px 20px;
   padding: 40px 140px;
-  box-shadow: var(--box-shadow);
   margin: 0 auto;
+}
+
+.container_enquiries h1{
+  margin-bottom: 20px;
 }
 
 .container_form__input,
@@ -31,10 +34,7 @@
 
   }
   
-  .container_enquiries__form {
-   
-  }
-
+ 
   .container_form__input,
   .container_form__messageInput {
     width: 100%;

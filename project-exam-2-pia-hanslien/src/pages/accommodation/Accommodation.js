@@ -8,11 +8,11 @@ function Accommodation() {
 
   return (
     <>
-    <div className={styles.container_accommodation_heading}>
-      <Heading headingLarge="Accommodations"/>
+      <div className={styles.container_accommodation_heading}>
+        <Heading headingLarge="Accommodations" />
       </div>
       <Search />
-      </>
+    </>
   );
 }
 

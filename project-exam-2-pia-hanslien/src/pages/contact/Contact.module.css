@@ -3,11 +3,6 @@
   grid-template-columns: 1fr;
   margin: 40px 20px 90px 20px;
   padding: 40px 140px;
-  box-shadow: var(--box-shadow);
-  background: url("../../img/cover.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
 }
 
 .container_contact_form {
@@ -42,6 +37,7 @@
   .container_contact {
     padding: 40px 30px;
   }
+
   .container_contact_form {
     width: 100%;
     margin: 0 auto;
@@ -49,7 +45,7 @@
 
   .container_form__input,
   .container_form__messageInput {
-    width:100%;
+    width: 100%;
     font-size: var(--font-size-link);
     padding: 10px;
   }

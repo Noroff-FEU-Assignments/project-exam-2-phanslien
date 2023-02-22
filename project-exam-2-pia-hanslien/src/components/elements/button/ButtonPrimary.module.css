@@ -3,20 +3,20 @@
   font-size: var( --font-size-body);
   font-weight: var(--font-weight-medium);
   color: var(--color-primary-light);
-  background: var( --color-lol);
+  background: var( --color-gradient);
   border-radius: var(--border-radius-large);
   margin: var(--spacing-medium) 0;
   box-shadow: var(--box-shadow);
-  border: var(--border-salmon);
+  border: var(--border-red);
   width: 120px;
   height: 40px;
   cursor: pointer;
 }
 
 .button_primary:hover {
-  background: var(--color-secondary-salmon);
+  background: var(--color-primary-red);
   color: var(--color-primary-dark);
-  border: var(--border-salmon);
+  border: var(--border-red);
   border-radius: var(--border-radius-large) var(--border-radius-large) var(--border-radius-large) 0;
 }
 

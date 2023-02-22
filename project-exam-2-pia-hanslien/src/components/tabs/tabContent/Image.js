@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import { URL } from "../../../constants/API";
 import styles from "./TabContentOne.module.css";
@@ -114,5 +112,3 @@ function TabContentThree() {
   );
 }
 export default TabContentThree;
-
-

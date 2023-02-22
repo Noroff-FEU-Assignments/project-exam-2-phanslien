@@ -2,18 +2,18 @@
 @import url("https://use.typekit.net/ptw8ime.css");
 
 :root {
-  --color-primary-dark: #222222;
+  --color-primary-dark: #191919;
   --color-primary-light: #F0F0F0;
-  --color-primary-blue: #13547a;
-  --color-secondary-salmon: #80d0c7;
-  --color-secondary-beige: #dce5e8;
-  --color-secondary-grey-200: #31313158;
+  --color-primary-red: #9A2929;
+  --color-secondary-beige: #e8e4e0;
+  --color-box-shadow: #31313158;
   --color-transparent: transparent;
 
-  --color-lol: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  --color-gradient: linear-gradient(40deg, #9A2929 0%, #f08686 100%);
   --font-family-logo: 'cinema-script', sans-serif;
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-body: 'Open Sans', sans-serif;
+  --font-family-quote: 'Poppins', sans-serif;
 
   --font-weight-small: 500;
   --font-weight-medium: 600;
@@ -25,6 +25,7 @@
   --font-size-heading-small: 18px;
   --font-size-body: 16px;
   --font-size-link: 14px;
+  --font-size-quote: 14px;
 
   --spacing-none: 0px;
   --spacing-x-small: 4px;
@@ -37,13 +38,12 @@
   --text-decoration-none: none;
   --text-decoration-underline: underline;
 
-  --box-shadow: 0px 2px 8px 0px var(--color-secondary-grey-200);
+  --box-shadow: 0px 2px 8px 0px var(--color-box-shadow);
 
   --border-none: none;
   --border-transparent: 1px solid var(--color-transparent);
   --border-dark: 1px solid var(--color-primary-dark);
-  --border-blue: 1px solid var(--color-primary-blue);
-  --border-salmon: 1px solid var(--color-lol);
+  --border-red: 1px solid var(--color-primary-red);
   --border-beige: 1px solid var(--color-secondary-beige);
 
   --border-radius-large: 50px;

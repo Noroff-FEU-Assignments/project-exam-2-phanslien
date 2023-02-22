@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState, useContext } from "react";
 import { useForm } from "react-hook-form";
+import ValidationError from "../../../pages/contact/Error";
+
 
 const url = LOGINURL + TOKEN_PATH;
 
@@ -16,22 +18,29 @@ const schema = yup.object().shape({
 });
 
 export default function LoginForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+  function onSubmit(data) {
+  }
+  
+
   const [submitting, setSubmitting] = useState(
     localStorage.access ? true : false
   );
-  const [loginError, setLoginError] = useState(null);
 
   const navigate = useNavigate();
 
-  const { register, handleSubmit, errors } = useForm({
-    resolver: yupResolver(schema),
-  });
+
 
   const [auth, setAuth] = useContext(AuthContext);
 
   async function onSubmit(data) {
     setSubmitting(true);
-    setLoginError(null);
     try {
       const response = await axios.post(url, data);
       console.log("response", response.data);
@@ -40,7 +49,7 @@ export default function LoginForm() {
 
       localStorage.setItem("response.data", JSON.stringify(response.data));
     } catch (error) {
-      setLoginError("Something went wrong. Please try again later.");
+      
     } finally {
       setSubmitting(false);
     }
@@ -48,27 +57,31 @@ export default function LoginForm() {
 
   return (
     <>
+
       <form onSubmit={handleSubmit(onSubmit)}>
-        {loginError && <p>{loginError}</p>}
         <fieldset className={styles.login_form} disabled={submitting}>
           <div>
             <p className={styles.login_text}>Username:</p>
             <input
+            {...register("username")}
               className={styles.login_input}
               name="username"
               placeholder="Username"
-              {...register("username")}
             />
+             {errors.username && <ValidationError>{errors.username.message}</ValidationError>}
           </div>
           <div>
             <p className={styles.login_text}>Password:</p>
             <input
+             {...register("password")}
               className={styles.login_input}
               name="password"
               placeholder="Password"
               {...register("password")}
               type="password"
             />
+                         {errors.password && <ValidationError>{errors.password.message}</ValidationError>}
+
           </div>
           <button className={styles.login_button} type="submit">
             {submitting ? "Loggin in..." : "Login"}

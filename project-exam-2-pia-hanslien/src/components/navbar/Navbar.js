@@ -17,7 +17,8 @@ import Enquiry from "../../pages/enquiry/Enquiry";
 function Navbar() {
   return (
     <Router>
-      <nav className={styles.navbar}>
+      <nav className={styles.container_navbar}>
+        <div className={styles.navbar}>
         <div>
           <NavLink to="/">
           <p className={styles.navbar_logo}>Holidaze</p>
@@ -42,6 +43,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
+        </div>
+        
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
