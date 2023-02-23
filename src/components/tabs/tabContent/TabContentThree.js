@@ -74,11 +74,11 @@ function TabContentThree() {
     <div onSubmit={addForm}>
       <form className={styles.form} onSubmit={uploadImage}>
         <input type="file"  onChange={(e) => setFiles(e.target.files)} />
-        <p className={styles.container_tabThree__span}>Name of hotell:</p>
+        <p className={styles.container_tabThree__span}>Name of establishment:</p>
         <input
           className={styles.container_tabThree__input}
           type="text"
-          placeholder="Enter your first name"
+          placeholder="Enter the name of establishment"
           value={hotelTitle}
           onChange={(e) => setTitle(e.currentTarget.value)}
         />
@@ -86,15 +86,15 @@ function TabContentThree() {
         <input
           className={styles.container_tabThree__input}
           type="number"
-          placeholder="Enter your first name"
+          placeholder="Enter the price pr. night"
           value={price}
           onChange={(e) => setPrice(e.currentTarget.value)}
         />
-        <p className={styles.container_tabThree__span}>Small description</p>
+        <p className={styles.container_tabThree__span}>Short description</p>
         <textarea
           className={styles.container_tabThree__textarea}
           type="text"
-          placeholder="Enter your first name"
+          placeholder="Write a short description about the establishment"
           value={hotelSmallDescription}
           onChange={(e) => setSmallDescription(e.currentTarget.value)}
         ></textarea>
@@ -102,7 +102,7 @@ function TabContentThree() {
         <textarea
           className={styles.container_tabThree__textarea}
           type="text"
-          placeholder="Enter your first name"
+          placeholder="Write a full description about the establishment"
           value={hotelFullDescription}
           onChange={(e) => setFullDescription(e.currentTarget.value)}
         ></textarea>

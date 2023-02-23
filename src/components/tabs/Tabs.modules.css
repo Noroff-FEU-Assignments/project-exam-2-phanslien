@@ -22,7 +22,6 @@
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-medium);
   margin: 0 10px 10px 10px;
-  font-size: 20px;
   width: 50%;
   padding: 2.5rem;
   list-style: none;
@@ -62,11 +61,19 @@ ul.dashboard_tabs__navigation li.active {
 }
 
 
-
-
-
 @media only screen and (max-width: 896px) {
-  
-  
+  .dashboard_tabs__navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+  }
+  .dashboard_tabs__navigation li {
+    font-family: var(--font-family-links);
+    font-weight: none;
+    margin: 0;
+    width: 100%;
+    padding: 20px 0;
+  }   
 }
 

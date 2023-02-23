@@ -41,6 +41,11 @@ function Navbar() {
                 Contact
               </NavLink>
             </li>
+            <li className={styles.nav__item}>
+              <NavLink to="/login" className={styles.navbar_link}>
+                Login
+              </NavLink>
+            </li>
           </ul>
         </div>
         </div>
