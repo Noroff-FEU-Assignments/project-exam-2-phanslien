@@ -1,8 +1,8 @@
 .container_contact {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 40px 20px 90px 20px;
-  padding: 40px 140px;
+  margin: 10px 10px 90px 20px;
+  padding: 10px 20px;
 }
 
 .container_contact_form {
@@ -13,6 +13,7 @@
 
 .container_contact_form p {
   float: left;
+  margin: 0 0 0 5px;
 }
 
 .container_form__input,
@@ -24,7 +25,6 @@
   border: none;
   box-shadow: var(--box-shadow);
   font-family: var(--font-body);
-  font-size: var(--font-size-body);
   margin: 5px 0px 20px 0px;
 }
 

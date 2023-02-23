@@ -3,8 +3,10 @@ import ButtonPrimary from "../../components/elements/button/ButtonPrimary";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 import cover from "../../img/cover.jpg";
+import floyen from "../../img/floyen.jpg";
 import contentImage1 from "../../img/contentImage1.jpg";
-import contentImage2 from "../../img/contentImage2.jpg";
+import hikefjellheimen from "../../img/hikefjellheimen.jpg";
+import kayakstrynvatten from "../../img/kayakstrynvatten.jpg";
 import HeadingMedium from "../../components/elements/heading/HeadingMedium";
 
 function Home() {
@@ -39,21 +41,21 @@ function Home() {
         </div>
         <div>
           <div className={styles.container_home_content_three}>
-            <HeadingMedium headingMedium="Top Three in the area" />
+            <HeadingMedium headingMedium="Top three things to do in the area" />
             <span className={styles.container_home_divider}> </span>
             <div className={styles.container_home_content_three_grid}>
               <div>
-                <img src={cover} alt="" />
+                <img src={hikefjellheimen} alt="" />
                 <span className={styles.container_home_divider}> </span>
                 <p>"Lorem ipsum sipsumt varie skol"</p>
               </div>
               <div>
-                <img src={contentImage1} alt="" />
+                <img src={floyen} alt="" />
                 <span className={styles.container_home_divider}> </span>
                 <p>"Lorem ipsum sipsumt varie skol"</p>
               </div>
               <div>
-                <img src={contentImage2} alt="" />
+                <img src={kayakstrynvatten} alt="" />
                 <span className={styles.strek}></span>
                 <span className={styles.container_home_divider}> </span>
                 <p>"Lorem ipsum sipsumt varie skol"</p>
